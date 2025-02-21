@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Hello",
+  "main": "main.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "portfolio"
+  },
+  "author": "Sumanth Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^5.3.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.85.0",
+    "typescript": "^5.7.3"
+  }
+}
