@@ -1,45 +1,46 @@
-.header-container{
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    position: sticky;
-    top: 0px;
-    z-index: 5;
+.header-container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
-.left-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 10%;
-    cursor: pointer;
+.left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  cursor: pointer;
 }
 
-
-.middle-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.right-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width : 10%;   
+.right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
 }
 
-.my-link{
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
+.my-link {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
 }

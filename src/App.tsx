@@ -15,50 +15,52 @@ function App() {
     <ErrorBoundary>
       <div className="main-container">
         <Header />
-        <Routes>
-          <Route index Component={Home}></Route>
-          <Route
-            path="/about"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <About />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/skills"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <Skills />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/experience"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <Experience />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/education"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <Education />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/hobbies"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <Hobbies />
-              </Suspense>
-            }
-          />
-          <Route path="*" element={<div>Page Not Found</div>}></Route>
-        </Routes>
+        <div className="child-container">
+          <Routes>
+            <Route index Component={Home}></Route>
+            <Route
+              path="/about"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/skills"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Skills />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/experience"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Experience />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/education"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Education />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/hobbies"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Hobbies />
+                </Suspense>
+              }
+            />
+            <Route path="*" element={<div>Page Not Found</div>}></Route>
+          </Routes>
+        </div>
       </div>
     </ErrorBoundary>
   );

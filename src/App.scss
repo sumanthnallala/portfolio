@@ -1,8 +1,13 @@
-.main-container{
-    height: 100vh;
+.main-container {
+  height: 100vh;
+  overflow: hidden;
 }
 
-.icon-size{
-    height: 30px;
-    width: 30px;
+.child-container {
+  height: calc(100vh - 60px);
+}
+
+.icon-size {
+  height: 30px;
+  width: 30px;
 }
