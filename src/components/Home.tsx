@@ -1,30 +1,48 @@
 import React, { Suspense } from "react";
 import "./Home.scss";
 import ProfilePicture from "./images/ProfilePicture";
+import PlatformLayout from "./PlatformLayout";
+import {
+  Description,
+  INTRO_WITH_NAME,
+  TECH_STACK,
+  TECH_STACK_LIST,
+  TITLE,
+} from "../constants/Constants";
 const Home = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="home-container">
+      <PlatformLayout>
         <div className="left-home-content">
-          <h1>Hey, I am Sumanth Reddy Nallala </h1>
-          <h2>I am Full Stack Developer</h2>
-          <p className="">
-            I'm a Software Developer with 2+ Years of Progressive Experience
-            having an expertise in Full Stack Web Development of SaaS Product
-            following Agile Methodologies. Driven Product Development Engineer
-            with a proven track record at Phenom, enhancing product
-            functionality and user experience in APM, QA Hub, and App Trail.
-            Excelled in React.js, Java, and team mentorship, boosting test
-            coverage by 80%. Skilled in both technical innovation and effective
-            team collaboration.
-          </p>
+          <h1>{INTRO_WITH_NAME}</h1>
+          <h1>{TITLE}</h1>
+          <h2 className="">
+            <ul>
+              <li className="list-type-none">
+                {Description.FIRST_DESCRIPTION}
+              </li>
+              <li className="list-type-none">
+                {Description.SECOND_DESCRIPTION}
+              </li>
+              <li className="list-type-none">
+                {Description.THIRD_DESCRIPTION}
+              </li>
+              <li className="list-type-none">
+                {Description.FOURTH_DESCRIPTION}
+              </li>
+              <li className="list-type-none">
+                <span className="home-span-element">{TECH_STACK}</span>
+                {TECH_STACK_LIST}
+              </li>
+            </ul>
+          </h2>
         </div>
         <div className="right-home-content">
           <div className="profile-picture-container">
             <ProfilePicture />
           </div>
         </div>
-      </div>
+      </PlatformLayout>
     </Suspense>
   );
 };

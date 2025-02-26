@@ -1,8 +1,8 @@
 import React from "react";
-import ProfilePicturePng from "../../assets/images/SumanthNallala.png";
+import ProfilePicturePng from "../../assets/images/sumanthreddy.png";
 const ProfilePicture = () => {
   return (
-    <img src={ProfilePicturePng} alt="Description" width={350} height={450} />
+    <img src={ProfilePicturePng} alt="Description" width={350} height={400} />
   );
 };
 

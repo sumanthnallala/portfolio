@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import GithubIcon from "./icons/GithubIcon";
@@ -13,14 +12,14 @@ const Header = () => {
         </Link>
       </div>
       <div className="middle-container">
-        <Link className="my-link" to="/about">
-          About
-        </Link>
         <Link className="my-link" to="/skills">
           Skills
         </Link>
         <Link className="my-link" to="/experience">
           Experience
+        </Link>
+        <Link className="my-link" to="/projects">
+          Projects
         </Link>
         <Link className="my-link" to="/education">
           Education
