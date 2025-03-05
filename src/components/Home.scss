@@ -1,12 +1,23 @@
-.left-home-content {
-  height: calc(100vh - 60px);
+.home-content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
   padding: 24px;
-  width: 70%;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-home-content {
+  padding: 24px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   background-color: maroon;
   color: white;
+  border-radius: 24px;
 }
 
 .right-home-content {
@@ -31,4 +42,11 @@
 
 .home-span-element {
   font-weight: bolder;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
 }

@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import "./App.scss";
 import ErrorBoundary from "./components/ErrorBoundary";
-const About = lazy(() => import("./components/About"));
+const About = lazy(() => import("./components/Contact"));
 const Skills = lazy(() => import("./components/Skills"));
 const Experience = lazy(() => import("./components/Experience"));
 const Education = lazy(() => import("./components/Education"));
