@@ -11,6 +11,18 @@ import JavaIcon from "./icons/JavaIcon";
 import SpringBootIcon from "./icons/SpringBootIcon";
 import MongoDBIcon from "./icons/MongoDBIcon";
 import MySQLIcon from "./icons/MySQLIcon";
+import PythonIcon from "./icons/PythonIcon";
+import FigmaIcon from "./icons/FigmaIcon";
+import JiraIcon from "./icons/JiraIcon";
+import GitIcon from "./icons/GitIcon";
+import GrafanaIcon from "./icons/GrafanaIcon";
+import JenkinsIcon from "./icons/JenkinsIcon";
+import ConfluenceIcon from "./icons/ConfluenceIcon";
+import BitbucketIcon from "./icons/BitbucketIcon";
+import GithubCopilotIcon from "./icons/GithubCopilotIcon";
+import ChatgptIcon from "./icons/ChatgptIcon";
+import GeminiIcon from "./icons/GeminiIcon";
+import PerplexityIcon from "./icons/PerplexityIcon";
 
 const Skills = () => {
   return (
@@ -61,6 +73,10 @@ const Skills = () => {
               MongoDB
             </div>
             <div className="skill">
+              <PythonIcon />
+              Python
+            </div>
+            <div className="skill">
               <MySQLIcon />
               SQL
             </div>
@@ -70,8 +86,48 @@ const Skills = () => {
           <h1>Others</h1>
           <div className="card">
             <div className="skill">
-              <ReactIcon />
-              React
+              <FigmaIcon />
+              Figma
+            </div>
+            <div className="skill">
+              <JiraIcon />
+              Jira
+            </div>
+            <div className="skill">
+              <GitIcon />
+              Git
+            </div>
+            <div className="skill">
+              <GrafanaIcon />
+              Grafana
+            </div>
+            <div className="skill">
+              <JenkinsIcon />
+              Jenkins
+            </div>
+            <div className="skill">
+              <ConfluenceIcon />
+              Confluence
+            </div>
+            <div className="skill">
+              <BitbucketIcon />
+              Bitbucket
+            </div>
+            <div className="skill">
+              <GithubCopilotIcon />
+              Github Copilot
+            </div>
+            <div className="skill">
+              <ChatgptIcon />
+              Chatgpt
+            </div>
+            <div className="skill">
+              <GeminiIcon />
+              Gemini
+            </div>
+            <div className="skill">
+              <PerplexityIcon />
+              Perplexity
             </div>
           </div>
         </div>

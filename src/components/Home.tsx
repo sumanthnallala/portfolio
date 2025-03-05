@@ -2,13 +2,7 @@ import React, { Suspense } from "react";
 import "./Home.scss";
 import ProfilePicture from "./images/ProfilePicture";
 import PlatformLayout from "./PlatformLayout";
-import {
-  Description,
-  INTRO_WITH_NAME,
-  TECH_STACK,
-  TECH_STACK_LIST,
-  TITLE,
-} from "../constants/Constants";
+import { Description, INTRO_WITH_NAME, TITLE } from "../constants/Constants";
 const Home = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -29,10 +23,6 @@ const Home = () => {
               </li>
               <li className="list-type-none">
                 {Description.FOURTH_DESCRIPTION}
-              </li>
-              <li className="list-type-none">
-                <span className="home-span-element">{TECH_STACK}</span>
-                {TECH_STACK_LIST}
               </li>
             </ul>
           </h2>
