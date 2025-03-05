@@ -24,9 +24,9 @@ const Header = () => {
         <Link className="my-link" to="/education">
           Education
         </Link>
-        <Link className="my-link" to="/hobbies">
+        {/* <Link className="my-link" to="/hobbies">
           Hobbies
-        </Link>
+        </Link> */}
       </div>
       <div className="right-container">
         <Link

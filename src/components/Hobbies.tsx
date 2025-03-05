@@ -2,68 +2,130 @@ import React from "react";
 import PlatformLayout from "./PlatformLayout";
 import { NavLink } from "react-router-dom";
 import "./Hobbies.scss";
-import {
-  EXPLORING_NEW_PLACES,
-  MEETING_NEW_PEOPLE,
-  READING_BOOKS,
-  CYCLING,
-  RUNNING,
-  LISTENING_TO_MUSIC,
-  PROMOTING_ROAD_SAFETY,
-} from "../constants/CommonConstants";
+import { HOBBIES } from "../constants/CommonConstants";
+import { Upload, UploadProps } from "antd";
+import { PlusOutlined } from "@ant-design/icons";
+
+import { useState } from "react";
+import { Image } from "antd";
+import type { GetProp, UploadFile } from "antd";
+
+type FileType = Parameters<GetProp<UploadProps, "beforeUpload">>[0];
+
+const getBase64 = (file: FileType): Promise<string> =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = (error) => reject(error);
+  });
 
 const Hobbies = () => {
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState("");
+  const [fileList, setFileList] = useState<UploadFile[]>([
+    {
+      uid: "-1",
+      name: "image.png",
+      status: "done",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "-2",
+      name: "image.png",
+      status: "done",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "-3",
+      name: "image.png",
+      status: "done",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "-4",
+      name: "image.png",
+      status: "done",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "-xxx",
+      percent: 50,
+      name: "image.png",
+      status: "uploading",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+    {
+      uid: "-5",
+      name: "image.png",
+      status: "error",
+    },
+  ]);
+
+  const handlePreview = async (file: UploadFile) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj as FileType);
+    }
+
+    setPreviewImage(file.url || (file.preview as string));
+    setPreviewOpen(true);
+  };
+
+  const handleChange: UploadProps["onChange"] = ({ fileList: newFileList }) => {
+    setFileList(newFileList);
+  };
+
+  const uploadButton = (
+    <button style={{ border: 0, background: "none" }} type="button">
+      <PlusOutlined />
+      <div style={{ marginTop: 8 }}>Upload</div>
+    </button>
+  );
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <PlatformLayout>
       <div className="hobbies-container">
-        <NavLink to="" onClick={() => scrollToSection("section1")}>
-          {EXPLORING_NEW_PLACES}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section2")}>
-          {READING_BOOKS}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section3")}>
-          {MEETING_NEW_PEOPLE}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section4")}>
-          {CYCLING}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section5")}>
-          {RUNNING}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section6")}>
-          {LISTENING_TO_MUSIC}
-        </NavLink>
-        <NavLink to="" onClick={() => scrollToSection("section7")}>
-          {PROMOTING_ROAD_SAFETY}
-        </NavLink>
-        <div id="section1" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{EXPLORING_NEW_PLACES}</h2>
-        </div>
-        <div id="section2" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{READING_BOOKS}</h2>
-        </div>
-        <div id="section3" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{MEETING_NEW_PEOPLE}</h2>
-        </div>
-        <div id="section4" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{CYCLING}</h2>
-        </div>
-        <div id="section5" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{RUNNING}</h2>
-        </div>
-        <div id="section6" style={{ height: "100%", paddingTop: 100 }}>
-          <h2>{LISTENING_TO_MUSIC}</h2>
-        </div>
-        <div
-          id="section7"
-          style={{ height: "100%", paddingTop: 100, paddingBottom: 200 }}
+        {HOBBIES?.map((hobby) => (
+          <NavLink
+            to=""
+            onClick={() =>
+              scrollToSection(`section${HOBBIES.indexOf(hobby) + 1}`)
+            }
+          >
+            {hobby}
+          </NavLink>
+        ))}
+        {HOBBIES?.map((hobby) => (
+          <div
+            id={`section${HOBBIES.indexOf(hobby) + 1}`}
+            style={{ height: "100%", paddingTop: 100 }}
+          >
+            <h2>{hobby}</h2>
+          </div>
+        ))}
+        <Upload
+          action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+          listType="picture-card"
+          fileList={fileList}
+          onPreview={handlePreview}
+          onChange={handleChange}
         >
-          <h2>{PROMOTING_ROAD_SAFETY}</h2>
-        </div>
+          {fileList.length >= 8 ? null : uploadButton}
+        </Upload>
+        {previewImage && (
+          <Image
+            wrapperStyle={{ display: "none" }}
+            preview={{
+              visible: previewOpen,
+              onVisibleChange: (visible) => setPreviewOpen(visible),
+              afterOpenChange: (visible) => !visible && setPreviewImage(""),
+            }}
+            src={previewImage}
+          />
+        )}
       </div>
       <div className="top-button">
         <button onClick={() => scrollTo(0, 0)}>top</button>

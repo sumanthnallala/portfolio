@@ -50,14 +50,14 @@ function App() {
                 </Suspense>
               }
             />
-            <Route
+            {/* <Route
               path="/hobbies"
               element={
                 <Suspense fallback={<div>Loading...</div>}>
                   <Hobbies />
                 </Suspense>
               }
-            />
+            /> */}
             <Route path="*" element={<div>Page Not Found</div>}></Route>
           </Routes>
         </div>
