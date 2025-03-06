@@ -1,9 +1,32 @@
 .contact-content-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
   width: 30%;
   border: 1px solid black;
   padding: 24px;
-  border-radius: 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.input-container {
+  height: 32px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.textarea-container {
+  height: 100px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.send-button-container {
+  display: flex;
+  height: 32px;
+  padding: 12px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
 }
