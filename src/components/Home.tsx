@@ -2,8 +2,15 @@ import React, { Suspense } from "react";
 import "./Home.scss";
 import ProfilePicture from "./images/ProfilePicture";
 import PlatformLayout from "./PlatformLayout";
-import { Description, INTRO_WITH_NAME, TITLE } from "../constants/Constants";
+import {
+  Description,
+  INTRO_WITH_NAME,
+  RESUME_LINK,
+  TITLE,
+} from "../constants/Constants";
 import Contact from "./Contact";
+import { message } from "antd";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -29,6 +36,15 @@ const Home = () => {
                   </li>
                 </ul>
               </h2>
+              <button className="check-resume-btn">
+                <Link
+                  className="check-resume-link"
+                  to={RESUME_LINK}
+                  target="_blank"
+                >
+                  Check Resume
+                </Link>
+              </button>
             </div>
             <div className="right-home-content">
               <div className="profile-picture-container">

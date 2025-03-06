@@ -106,3 +106,6 @@ export const EMAILJS = {
   TEMPLATE_ID: "template_adn0n7m",
   PUBLIC_KEY: "HLMJZpDpPw6tA_CcU",
 };
+
+export const RESUME_LINK =
+  "https://drive.google.com/file/d/1vMSL7Wzvqg6HFZ7e1Y80-QSaV5K_d9hc/view";
