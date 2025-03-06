@@ -100,3 +100,9 @@ export const NMREC = {
   END_DATE: "Dec 2020",
   LOCATION: "Hyderabad",
 };
+
+export const EMAILJS = {
+  SERVICE_ID: "service_sq3fg8b",
+  TEMPLATE_ID: "template_adn0n7m",
+  PUBLIC_KEY: "HLMJZpDpPw6tA_CcU",
+};
