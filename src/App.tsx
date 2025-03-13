@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import "./App.scss";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Projects from "./components/Projects";
 const About = lazy(() => import("./components/Contact"));
 const Skills = lazy(() => import("./components/Skills"));
 const Experience = lazy(() => import("./components/Experience"));
@@ -39,6 +40,14 @@ function App() {
               element={
                 <Suspense fallback={<div>Loading...</div>}>
                   <Experience />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Projects />
                 </Suspense>
               }
             />

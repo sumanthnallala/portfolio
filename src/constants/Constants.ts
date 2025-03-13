@@ -5,13 +5,11 @@ export const TECH_STACK_LIST =
   "React.js, Javascript, HTML, CSS, Java, Spring Boot, MongoDB, Jenkins, Git, Jira, Confluence.";
 export const Description = {
   FIRST_DESCRIPTION:
-    "I am a Software Developer with 2+ Years of Progressive Experience having an expertise in Full Stack Web Development of SaaS Product following Agile Methodologies.",
+    "I have 2+ years of experience in Full Stack Web Development for SaaS products, following Agile methodologies.",
   SECOND_DESCRIPTION:
-    "Driven Product Development Engineer with a proven track record at Phenom, enhancing product functionality and user experience in APM, QA Hub, and App Trail.",
+    "Proven track record at Phenom, enhancing product functionality with expertise in React.js, Java, and team mentorship.",
   THIRD_DESCRIPTION:
-    "Excelled in React.js, Java, and team mentorship, boosting test coverage by 80%.",
-  FOURTH_DESCRIPTION:
-    "Skilled in both technical innovation and effective team collaboration.",
+    "A proactive leader and initiative-taker, driving innovation and fostering team collaboration.",
 };
 export const PHENOM_FULLTIME = {
   TITLE: "Product Development Engineer I",
@@ -19,7 +17,7 @@ export const PHENOM_FULLTIME = {
   START_DATE: "May 2022",
   END_DATE: "Present",
   DESCRIPTION:
-    "Developed multiple key features for APM (Application Performance Monitoring), which has an active user base of 400+ people across organization and used mainly for proactive monitoring and alerting of services. Have hands-on experience in developing tables, charts, forms, search functionality including debouncing other components following UI/UX Standards by using Antd Library and involved in API Design and Documentation. Involved in reviewing pull requests, handling deployments, mentoring team members, maintaining and improving code quality by adding unit test cases, updating weekly metrics from grafana back to leaders,logging and monitoring using grafana.",
+    "Developed key features for APM (Application Performance Monitoring), supporting 400+ active usersfor proactive service monitoring and alerts. Built UI components using Ant Design, contributed to API design and documentation, and ensured high code quality through PR reviews. Managed deployments,worked on micro services, mentored team members, and oversaw logging and monitoring using Grafana.",
   SKILLS: [
     "React.js",
     "Javascript",
@@ -45,7 +43,7 @@ export const PHENOM_INTENRSHIP = {
   START_DATE: "Jan 2022",
   END_DATE: "April 2022",
   DESCRIPTION:
-    "Have contributed to the Test Cases Design, Documentation, Execution and Reported the Issues to the Respective Developers and Improved the Test Coverage by 80% and Automated the Test Cases for the Products : QA Hub, APM, App Trail.",
+    "Have contributed to the Test Cases Design, Documentation, Execution and Reported the Issues tothe Respective Developers and Improved the Test Coverage by 80% and Automated the Test Cases formultiple products.",
   SKILLS: [
     "Google Spreadsheet",
     "Python",
@@ -65,7 +63,7 @@ export const NXTWAVE = {
   START_DATE: "April 2021",
   END_DATE: "Dec 2021",
   DESCRIPTION:
-    "Gained hands-on experience in web development and developed proficiency in HTML, CSS, JavaScript,Bootstrap and developed strong problem-solving and critical thinking skills. Successfully completed multiple projects including Static, Dynamic, and Responsive web applications and Achieved certifications for the same. Achieved certifications in Programming foundations with Python and Developer Foundations.",
+    "Gained hands-on experience in web development with HTML, CSS, JavaScript, and Bootstrap, buildingstatic, dynamic, and responsive web applications. Earned certifications in Programming Foundations with Python and Developer Foundations through NxtWave Intensive Program.",
   SKILLS: ["HTML", "CSS", "JavaScript", "Bootstrap", "Python"],
   LOCATION: "Hyderabad",
 };
@@ -76,7 +74,7 @@ export const SCALER = {
   START_DATE: "October 2024",
   END_DATE: "Present",
   DESCRIPTION:
-    "Pursuing masters in computer science from scaler academy, where I am learning about DSA, System Design and working on multiple projects.",
+    "Pursuing a Master of Science in Computer Science at Scaler Neovarsity, a globally accreditedprogram recognized for its industry-aligned curriculum. Focused on practical engineering, includingproblem-solving with data structures, algorithms, system design, and real-world project development to build scalable and efficient software solutions.",
   SKILLS: [
     "Problem Solving",
     "Data Structures",
@@ -108,4 +106,19 @@ export const EMAILJS = {
 };
 
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1vMSL7Wzvqg6HFZ7e1Y80-QSaV5K_d9hc/view";
+  "https://drive.google.com/file/d/1QWBPW1PHFxwQLG27U2PggwSS-tvHRHf1/view";
+
+export const PROJECTS = [
+  {
+    TITLE: "E-Commerce Backend Application",
+    DESCRIPTION:
+      "Developed a RESTful e-commerce backend using Spring Boot and MongoDB, enabling product management with CRUD operations. Implemented APIs for adding, fetching, and deleting products, following a layered architecture (Controller, Service, Repository. Integrated Spring Data MongoDB for seamless NoSQL database interaction.",
+    TECH_STACK: "Spring Boot, MongoDB, Spring Data, REST API, Lombok",
+  },
+  {
+    TITLE: "Personal Portfolio Website",
+    DESCRIPTION:
+      "Designed and developed a responsive and interactive portfolio website to showcase my professional summary, skills, projects, experience, and education. Implemented seamless navigation, allowing users to easily explore different sections. Integrated resume download, direct email contact, and GitHub redirection for enhanced accessibility. Deployed the application using AWS Amplify and configured a custom domain via GoDaddy, ensuring a professional and scalable web presence.",
+    TECH_STACK: "HTML, CSS, JavaScript, React, Bootstrap, AWS Amplify, GoDaddy",
+  },
+];

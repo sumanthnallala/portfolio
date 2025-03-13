@@ -31,9 +31,6 @@ const Home = () => {
                   <li className="list-type-none">
                     {Description.THIRD_DESCRIPTION}
                   </li>
-                  <li className="list-type-none">
-                    {Description.FOURTH_DESCRIPTION}
-                  </li>
                 </ul>
               </h2>
               <button className="check-resume-btn">
