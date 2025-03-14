@@ -45,7 +45,7 @@ const Home = () => {
             </div>
             <div className="right-home-content">
               <div className="profile-picture-container">
-                <ProfilePicture />
+                <ProfilePicture className="" />
               </div>
             </div>
           </div>

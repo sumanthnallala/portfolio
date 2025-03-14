@@ -5,11 +5,11 @@ export const TECH_STACK_LIST =
   "React.js, Javascript, HTML, CSS, Java, Spring Boot, MongoDB, Jenkins, Git, Jira, Confluence.";
 export const Description = {
   FIRST_DESCRIPTION:
-    "I have 2+ years of experience in Full Stack Web Development for SaaS products, following Agile methodologies.",
+    "I possess over two years of experience in Full Stack Web Development for Software as a Service (SaaS) products, utilizing Agile methodologies.",
   SECOND_DESCRIPTION:
-    "Proven track record at Phenom, enhancing product functionality with expertise in React.js, Java, and team mentorship.",
+    "Demonstrated success at Phenom, improving product capabilities through proficiency in React.js, Java, and guiding team members.",
   THIRD_DESCRIPTION:
-    "A proactive leader and initiative-taker, driving innovation and fostering team collaboration.",
+    "An enthusiastic leader who takes initiative, encourages innovation, and promotes teamwork.",
 };
 export const PHENOM_FULLTIME = {
   TITLE: "Product Development Engineer I",
@@ -63,7 +63,7 @@ export const NXTWAVE = {
   START_DATE: "April 2021",
   END_DATE: "Dec 2021",
   DESCRIPTION:
-    "Gained hands-on experience in web development with HTML, CSS, JavaScript, and Bootstrap, buildingstatic, dynamic, and responsive web applications. Earned certifications in Programming Foundations with Python and Developer Foundations through NxtWave Intensive Program.",
+    "Gained hands-on experience in web development with HTML, CSS, JavaScript, and Bootstrap, building static, dynamic, and responsive web applications. Earned certifications in Programming Foundations with Python and Developer Foundations through NxtWave Intensive Program.",
   SKILLS: ["HTML", "CSS", "JavaScript", "Bootstrap", "Python"],
   LOCATION: "Hyderabad",
 };
@@ -74,7 +74,7 @@ export const SCALER = {
   START_DATE: "October 2024",
   END_DATE: "Present",
   DESCRIPTION:
-    "Pursuing a Master of Science in Computer Science at Scaler Neovarsity, a globally accreditedprogram recognized for its industry-aligned curriculum. Focused on practical engineering, includingproblem-solving with data structures, algorithms, system design, and real-world project development to build scalable and efficient software solutions.",
+    "Pursuing a Master of Science in Computer Science at Scaler Neovarsity, a globally accredited program recognized for its industry-aligned curriculum. Focused on practical engineering, including problem-solving with data structures, algorithms, system design, and real-world project development to build scalable and efficient software solutions.",
   SKILLS: [
     "Problem Solving",
     "Data Structures",
@@ -106,7 +106,7 @@ export const EMAILJS = {
 };
 
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1QWBPW1PHFxwQLG27U2PggwSS-tvHRHf1/view";
+  "https://drive.google.com/file/d/1h2ySJidY03qk46PVCuoaJiLCRQBTUKDE/view";
 
 export const PROJECTS = [
   {
@@ -114,11 +114,13 @@ export const PROJECTS = [
     DESCRIPTION:
       "Developed a RESTful e-commerce backend using Spring Boot and MongoDB, enabling product management with CRUD operations. Implemented APIs for adding, fetching, and deleting products, following a layered architecture (Controller, Service, Repository. Integrated Spring Data MongoDB for seamless NoSQL database interaction.",
     TECH_STACK: "Spring Boot, MongoDB, Spring Data, REST API, Lombok",
+    LINK: "https://github.com/sumanthnallala/e-commerce",
   },
   {
     TITLE: "Personal Portfolio Website",
     DESCRIPTION:
       "Designed and developed a responsive and interactive portfolio website to showcase my professional summary, skills, projects, experience, and education. Implemented seamless navigation, allowing users to easily explore different sections. Integrated resume download, direct email contact, and GitHub redirection for enhanced accessibility. Deployed the application using AWS Amplify and configured a custom domain via GoDaddy, ensuring a professional and scalable web presence.",
     TECH_STACK: "HTML, CSS, JavaScript, React, Bootstrap, AWS Amplify, GoDaddy",
+    LINK: "https://github.com/sumanthnallala/portfolio",
   },
 ];
