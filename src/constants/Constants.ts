@@ -106,7 +106,7 @@ export const EMAILJS = {
 };
 
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1h2ySJidY03qk46PVCuoaJiLCRQBTUKDE/view";
+  "https://drive.google.com/file/d/1SVDBjLzc2je5my_HMVDAZuO-3NsNUpPm/view";
 
 export const PROJECTS = [
   {
