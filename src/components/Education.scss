@@ -1,0 +1,12 @@
+.education-container{
+    padding: 24px;
+    .education-description {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 90%;
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+}

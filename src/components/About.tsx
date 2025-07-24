@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.scss";
+import portraitImage from "../assets/images/my-notion-face-portrait.png";
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="content">
+        <h2>About Me</h2>
         <p>
           Hi, I am Sumanth, a Software Engineer who is passionate about building
           smart, scalable and genuinely useful applications. I develop clean and
@@ -34,7 +36,11 @@ const About = () => {
         </p>
       </div>
       <div className="image">
-        <img src=""></img>
+        <img
+          src={portraitImage}
+          alt="Portrait of Sumanth"
+          style={{ height: 400, borderRadius: "50%" }}
+        />
       </div>
     </div>
   );

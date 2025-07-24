@@ -1,8 +1,12 @@
 .about-container {
+  display: flex;
   padding: 24px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   .content {
     width: 70%;
+  }
+  .image {
+    width: 30%;
   }
 }

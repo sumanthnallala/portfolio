@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import { MoonOutlined, SunOutlined } from "@ant-design/icons";
@@ -14,24 +14,31 @@ const Header = (Props: props) => {
     setDarkMode(!darkMode);
   };
 
+  const navElements = [
+    { name: "About", href: "" },
+    { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
     <header className={`header ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="logo">
         <h3>Sumanth Nallala</h3>
       </div>
       <nav className="nav-links">
-        <Button type="text" style={{ color: darkMode ? "#ffffff" : "#000000" }}>
-          About
-        </Button>
-        <Button type="text" style={{ color: darkMode ? "#ffffff" : "#000000" }}>
-          Projects
-        </Button>
-        <Button type="text" style={{ color: darkMode ? "#ffffff" : "#000000" }}>
-          Education
-        </Button>
-        <Button type="text" style={{ color: darkMode ? "#ffffff" : "#000000" }}>
-          Contact
-        </Button>
+        {navElements.map((element) => (
+          <a
+            key={element.name}
+            href={element.href}
+            style={{
+              color: darkMode ? "#ffffff" : "#000000",
+              textDecoration: "none",
+            }}
+          >
+            {element.name}
+          </a>
+        ))}
       </nav>
       <div className="social-links">
         <Link
