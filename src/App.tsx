@@ -17,7 +17,7 @@ function App() {
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="sections">
-          <section id="about">
+          <section id="">
             <About />
           </section>
           <section id="projects">

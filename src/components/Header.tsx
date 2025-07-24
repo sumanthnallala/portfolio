@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import { MoonOutlined, SunOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 interface props {
   darkMode: boolean;
   setDarkMode: (mode: boolean) => void;
@@ -15,7 +14,7 @@ const Header = (Props: props) => {
   };
 
   const navElements = [
-    { name: "About", href: "#about" },
+    { name: "About", href: "" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
