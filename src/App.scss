@@ -1,54 +1,24 @@
-/* index.css or App.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 6px 12px;
 }
 
-.child-container {
-  height: calc(100vh - 60px);
-}
-
-.icon-size {
-  height: 50px;
-  width: 50px;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .light-mode {
   background-color: #ffffff;
   color: #000000;
-
-  .logo a,
-  .nav-links a {
-    color: #000000; // Consistent font color for links in light mode
-  }
-
-  .toggle-mode {
-    background-color: #000000;
-    color: #ffffff; // Button font color for light mode
-  }
-}
-
-.dark-mode {
-  background-color: #000000;
-  color: #ffffff;
-
-  .logo a,
-  .nav-links a {
-    color: #ffffff; // Consistent font color for links in dark mode
-  }
-
-  .toggle-mode {
-    background-color: #ffffff;
-    color: #000000; // Button font color for dark mode
-  }
 }
