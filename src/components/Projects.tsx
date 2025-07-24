@@ -7,7 +7,7 @@ export function Projects() {
       <h2>Projects</h2>
       <div>
         <h3>Bookstore Application</h3>
-        <div className="project-description">
+        <div className="projects-description">
           <p>
             This project is a robust, full-stack Book Store Management System
             backend, developed using Spring Boot and Java. It is designed to
@@ -52,7 +52,7 @@ export function Projects() {
       </div>
       <div>
         <h3>Portfolio Website</h3>
-        <div className="project-description">
+        <div className="projects-description">
           A modern portfolio website and application built using React,
           JavaScript, TypeScript, HTML, and CSS. The project includes key
           sections such as Education, Projects, and Contact, providing a

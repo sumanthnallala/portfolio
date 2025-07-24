@@ -1,12 +1,12 @@
 .education-container{
     padding: 24px;
+    width: 90%;
     .education-description {
         display: flex;
         justify-content: space-between;
-        text-align: left;
+        text-align: justify;
         width: 90%;
         font-size: 16px;
-        color: #666;
         margin-bottom: 20px;
     }
 }
