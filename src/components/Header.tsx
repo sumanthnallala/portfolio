@@ -1,43 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
-import GithubIcon from "./icons/GithubIcon";
+import { MoonOutlined, SunOutlined } from "@ant-design/icons";
+interface props {
+  darkMode: boolean;
+  setDarkMode: (mode: boolean) => void;
+}
+const Header = (Props: props) => {
+  const { darkMode, setDarkMode } = Props;
 
-const Header = () => {
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="header-container">
-      <div className="left-container">
-        <Link className="my-link" to="/">
-          Portfolio
-        </Link>
+    <header className={`header ${darkMode ? "dark-mode" : "light-mode"}`}>
+      <div className="logo">
+        <Link to="/">Sumanth Nallala</Link>
       </div>
-      <div className="middle-container">
-        <Link className="my-link" to="/skills">
-          Skills
-        </Link>
-        <Link className="my-link" to="/experience">
-          Experience
-        </Link>
-        <Link className="my-link" to="/projects">
-          Projects
-        </Link>
-        <Link className="my-link" to="/education">
-          Education
-        </Link>
-        {/* <Link className="my-link" to="/hobbies">
-          Hobbies
-        </Link> */}
-      </div>
-      <div className="right-container">
-        <Link
-          className="my-link"
-          to="https://github.com/sumanthnallala"
-          target="_blank"
-        >
-          <GithubIcon />
-        </Link>
-      </div>
-    </div>
+      <nav className="nav-links">
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+      <button
+        className="toggle-mode"
+        style={darkMode ? { background: "#000000" } : { background: "#ffffff" }}
+        onClick={toggleDarkMode}
+      >
+        {darkMode ? (
+          <MoonOutlined style={{ color: "#ffffff" }} />
+        ) : (
+          <SunOutlined style={{ color: "#000000" }} />
+        )}
+      </button>
+    </header>
   );
 };
 
